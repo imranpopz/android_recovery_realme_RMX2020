@@ -28,19 +28,10 @@ TARGET_RECOVERY_DEVICE_MODULES += \
 	libkeymaster4 \
 	android.hardware.boot@1.2 \
 	libsoftkeymasterdevice \
-	libpuresoftkeymasterdevice \
-    libkeymaster4support \
-    libkeymaster_portable \
-    libkeymaster_messages \
-    libsoft_attestation_cert
+	libpuresoftkeymasterdevice
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
 	$(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
-	$(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4support.so \
-	$(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster_portable.so \
-	$(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster_messages.so \
-	$(TARGET_OUT_SHARED_LIBRARIES)/libsoft_attestation_cert.so \
 	$(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.boot@1.2.so \
 	$(TARGET_OUT_SHARED_LIBRARIES)/libsoftkeymasterdevice.so \
 	$(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
-	
