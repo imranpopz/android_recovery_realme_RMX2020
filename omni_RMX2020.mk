@@ -27,14 +27,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX2020
-PRODUCT_NAME := twrp_RMX2020
+PRODUCT_NAME := omni_RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme Monet
 PRODUCT_MANUFACTURER := realme
